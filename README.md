@@ -66,3 +66,7 @@ For visualizations, I used the seaborn package to plot different types of plots 
 ![Scatter w/ Regression](scatter_with_regression.png)
 ![Boxplot](boxplot.png)
 ![lineplot](lineplot.png)
+![Barplot](barplot.png)
+![Insurance Boxplot](boxplot_insurance.png)
+![Pairplot](pairplot.png)
+![Facet Grid](facetGrid.png)
