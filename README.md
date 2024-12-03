@@ -61,3 +61,8 @@ We also tested to determine if the interactions between age and education levels
 | Age:Some College       | 0.0003      | 0.459   |
 
 ## Part 4: Data Visualization
+For visualizations, I used the seaborn package to plot different types of plots to analyze walking speed, cost analysis, and combined visualizations. 
+
+![Scatter w/ Regression](scatter_with_regression.png)
+![Boxplot](boxplot.png)
+![lineplot](lineplot.png)
