@@ -45,3 +45,19 @@ These results are significant as tested using the ANOVA statistical test. Our F-
 To calculate the effect size, we calculated the between-group sum of squares and divded it by the total sum of squares. Our resulting eta squared is 0.23. This indicates a large effect size meaning that insurance type explains a substantial portion of the variance in cost of visits. 
 
 ### Advanced Analysis
+For our analysis on education age effects on walking speed, we fitted an ols model to our data. To control confounders, we used the formula `walking_speed ~ age * education_level + insurance_type`. From our regression results illustrated below in the table, we can see that education and age effect walking speed. Graduate student level of education is associated with a postiive effect on walking speed with a coefficient of 0.3866, while high school and some college levels of education have a negative effect of walking speed with coefficients of -0.8226 and -0.4144 respectively. In addition, the p-values are less than 0.001, which make these effects statistically significant. For age, the coefficient is -0.0305, which means there is a slight negative association to walking speed. Since p < 0.001, this is significant. 
+We also tested to determine if the interactions between age and education levels were statistically significant. However, the coefficients were similar to each other showing that the relationship between age and walking speed does not vary significantly across education levels. Also, because all of the p-values are greater than alpha, these results are not significant. 
+
+| Variable               | Coefficient | P-value |
+| ---------------------- | ----------- | ------- |
+| Graduate               |  0.3866     | 0.000   |
+| High School            | -0.8226     | 0.000   |
+| Some College           | -0.4144     | 0.000   |
+| Platinum               | -0.0121     | 0.071   |
+| Premium                | -0.0093     | 0.162   |
+| Age                    | -0.0305     | 0.000   |
+| Age:Graduate           | 0.0003      | 0.485   |
+| Age:High School        | 0.0007      | 0.100   |
+| Age:Some College       | 0.0003      | 0.459   |
+
+## Part 4: Data Visualization
