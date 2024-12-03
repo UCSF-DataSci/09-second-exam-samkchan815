@@ -64,9 +64,22 @@ We also tested to determine if the interactions between age and education levels
 For visualizations, I used the seaborn package to plot different types of plots to analyze walking speed, cost analysis, and combined visualizations. 
 
 ![Scatter w/ Regression](scatter_with_regression.png)
+The scatter plot above illustrates how as age increases, the walking speed decreases.
+
 ![Boxplot](boxplot.png)
+This boxplot illustrates the effect of education level on walking speed. As we can see, graduate students have the highest average walking speed, while high schoolers have the lowest average walking speed.
+
 ![lineplot](lineplot.png)
+This lineplot shows the interaction of education and age. As age increaes, the walking speed decreases. In addition, it can be seen that graduate students and bachelors education levels have overall higher walking speeds compared to high school and some college level educations.
+
 ![Barplot](barplot.png)
+The barplot shows that the average cost per visit for the basic insurance type has the highest cost. The platinum insurance type has the lowest visit cost. 
+
 ![Insurance Boxplot](boxplot_insurance.png)
+This boxplot also illustrates the insurance type compared to the cost of a visit. The basic plan has the largest range of prices per visit cost. The platinum plan has the smallest range of prices, along with the lowest median visit cost.
+
 ![Pairplot](pairplot.png)
+This pair plot compares age, walking speed, and visit cost. We can see that there is a negative trend comparing age and walking speed. The plot also shows that lower tier insurance plans have lower costs and high tier insurance plans have higher costs.
+
 ![Facet Grid](facetGrid.png)
+This multiple facet grid shows that regardless of education level, as age increases, the speed of walking decreases.
