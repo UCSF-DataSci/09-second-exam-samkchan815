@@ -8,11 +8,43 @@ In order to select certain columns for our clean csv file, I used the `cut` comm
 create the `insurance.lst` file. Using `echo` I listed variables for the new variable. Finally, 
 using the `head` command, I printed the first few rows, and the total number of visits.
 
+Total number of visit: 15429
+
+Here are the first four records, as a sample of the dataset:
+
+| patient_id | visit_date | age   | education_level | walking_speed |
+| ---------- | ---------- | ----- | --------------- | ------------- |
+| P0001      | 2020-02-22 | 19.72 | High School     | 4.39          |
+| P0001      | 2020-05-21 | 19.96 | High School     | 4.22          |
+| P0001      | 2020-09-02 | 20.25 | High School     | 4.75          |
+| P0001      | 2020-12-04 | 20.5  | High School     | 4.36          | 
+
 ## Question 2: Data Analysis with Python
 In `analyze_visits.py`, I first loaded the csv file and cleaned the data. I then randomly
 generated insurance information, using a dictionary to account for price differences in each
 insurance type. Finally to find the summary statistics, I used aggregation and output the
 information for each.
+
+The table below shows the mean walking speed compared to education level. As we can see, those with graduate level education have the highest walking speed while those in high school have the lowest walking speed. 
+
+| education_level | Mean Walking Speed |
+| --------------- | ------------------ |
+|Bachelors        | 4.041678           |
+|Graduate         | 4.429639           |
+|High School      | 3.293034           |
+|Some College     | 3.645585           |
+
+
+This table shows the mean cost of a visit by insurance type. Basic insurance has the highest average visit price while platinum has the lowest cost per visit.
+
+| insurance_type | Mean cost per visit |
+| -------------- | ------------------- |
+| Basic          | 552.496047          |
+| Platinum       | 273.643387          |
+| Premium        | 442.942279          |
+
+To find how age effects walking speed, we used the `corr()` function. This resulted in a value of -0.6905, which means that for every year that age increases, the walking speed decreases by 0.6905.
+
 
 ## Question 3: Statistical Analysis
 ### Analyze Walking Speed
